@@ -1,0 +1,142 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    height: 100vh;
+    background: url('img/bg1.jpg') no-repeat center;
+    background-size: cover;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+.navbar {
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar h1 {
+
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.navbar button {
+
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.container {
+
+    width: 50%;
+    height: 100vh;
+    background: rgba(25, 25, 25, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.info {
+
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-weight: normal;
+}
+
+.info h2 {
+
+    font-size: 4rem;
+    letter-spacing: 10px;
+}
+
+.info p {
+
+    font-size: 14px;
+    color: #f0eef1;
+    margin: 20px 0;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.info input {
+
+    width: 50%;
+    padding: 8px 10px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+.info input::placeholder {
+
+    color: #fff;
+    text-align: center;
+}
+
+.slider {
+
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 50px;
+    right: 30px;
+}
+
+.slider #prev,
+#next {
+
+    width: 30px;
+    cursor: pointer;
+}
+
+.preview {
+
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.preview img {
+
+    width: 60px;
+    opacity: 0.5;
+    margin: 0 10px;
+}
+
+.preview .active {
+
+    width: 100px;
+    opacity: 1;
+    display: block;
+    border: 2px solid #fff;
+}
